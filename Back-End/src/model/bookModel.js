@@ -11,6 +11,16 @@ class Book {
     informationsDisplay() {
         return `${this.titleBook} - ${this.authorBook} - ${this.descriptionBook} - ${this.yearPublicBook} - ${this.categoryBook} - ${this.coverBook}`
     };
+
+    updateBook(newTitleBook,newAuthorBook, newDescriptionBook, newYearPublicBook, newCategoryBook, newCoverBook) {
+        this.titleBook = newTitleBook;
+        this.authorBook = newAuthorBook;
+        this.descriptionBook = newDescriptionBook;
+        this.yearPublicBook = newYearPublicBook;
+        this.categoryBook = newCategoryBook;
+        this.coverBook = newCoverBook;
+    }
+    
 };
 
 export default Book;
